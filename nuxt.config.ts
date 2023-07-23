@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
   vite: {
     ssr: {
-      noExternal: ['vuetify'],
+      noExternal: [/vuetify/],
     },
     define: {
       'process.env.DEBUG': false,
