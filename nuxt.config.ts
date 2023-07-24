@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/test/',
   },
-  ssr: false,
+  ssr: true,
   css: ['@/assets/css/main.css'],
   postcss: {
     plugins: {

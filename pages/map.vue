@@ -6,6 +6,7 @@ const zoom = ref(2)
 const coordinates = [50, 50]
 </script>
 <template>
+  test
   <div style="height:100%; width:100%">
     <l-map :use-global-leaflet="false" ref="map" v-model:zoom="zoom" :center="[47.41322, -1.219482]">
         <l-tile-layer
@@ -17,8 +18,4 @@ const coordinates = [50, 50]
       <l-marker :lat-lng="coordinates" draggable> </l-marker>
     </l-map>
   </div>
-
-  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-    Button
-  </button>
 </template>
